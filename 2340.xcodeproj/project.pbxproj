@@ -100,8 +100,8 @@
 				4E0F23F12195E24800D0C725 /* AppDelegate.swift */,
 				4E0F23F32195E24900D0C725 /* ViewController.swift */,
 				4E0F23F52195E24900D0C725 /* Main.storyboard */,
-				4E0F23F82195E24A00D0C725 /* Assets.xcassets */,
 				4E0F23FA2195E24A00D0C725 /* LaunchScreen.storyboard */,
+				4E0F23F82195E24A00D0C725 /* Assets.xcassets */,
 				4E0F23FD2195E24A00D0C725 /* Info.plist */,
 			);
 			path = 2340;
