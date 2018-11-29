@@ -1,0 +1,6 @@
+framework module Pods_2340 {
+  umbrella header "Pods-2340-umbrella.h"
+
+  export *
+  module * { export * }
+}
