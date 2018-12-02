@@ -157,7 +157,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="View Locations"/>
                                 <connections>
-                                    <segue destination="0zG-lz-lEr" kind="show" id="1l6-d7-CPs"/>
+                                    <segue destination="8wl-cI-oVi" kind="show" id="xCE-y6-dFe"/>
                                 </connections>
                             </button>
                             <button verifyAmbiguity="off" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndZ-zW-Xm1">
@@ -200,6 +200,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e2o-2I-SeE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="151" y="-290"/>
+        </scene>
+        <!--Location View Controller-->
+        <scene sceneID="ffb-qW-Xp1">
+            <objects>
+                <tableViewController id="8wl-cI-oVi" customClass="LocationViewController" customModule="_340" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cpl-Id-EsN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LocationViewCell" id="BcI-uI-jXz">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BcI-uI-jXz" id="af0-uL-urG">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="8wl-cI-oVi" id="tVE-e8-QcJ"/>
+                            <outlet property="delegate" destination="8wl-cI-oVi" id="dma-aG-55L"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kDq-z6-F9z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1223" y="-296"/>
         </scene>
         <!--Register Controller-->
         <scene sceneID="7sL-Za-vgm">
@@ -328,6 +356,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Asc-fM-OW3"/>
+        <segue reference="cCB-qb-PKj"/>
     </inferredMetricsTieBreakers>
 </document>
