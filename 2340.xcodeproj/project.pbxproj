@@ -22,6 +22,8 @@
 		4ED6F4BF21B4B408007046AF /* DonationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED6F4BE21B4B408007046AF /* DonationsViewController.swift */; };
 		4ED6F4C121B4B712007046AF /* DetailDonationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED6F4C021B4B712007046AF /* DetailDonationController.swift */; };
 		4ED6F4C321B4BB33007046AF /* AddDonationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED6F4C221B4BB33007046AF /* AddDonationController.swift */; };
+		4ED6F4C521B4D46A007046AF /* SearchDonationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED6F4C421B4D46A007046AF /* SearchDonationController.swift */; };
+		4ED6F4C721B4D8F2007046AF /* SearchResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED6F4C621B4D8F2007046AF /* SearchResultController.swift */; };
 		5885FC660F46E92F96A0E92E /* Pods_2340UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B8C50AAB40F816A473D8A0 /* Pods_2340UITests.framework */; };
 		B4315E0B815BF6D09DF8605E /* Pods_2340Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537D01AE80BF844DE979D34E /* Pods_2340Tests.framework */; };
 		EDB304C0B39886DA6636C533 /* Pods_2340.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB93D56DB29CB24B3AF6AB84 /* Pods_2340.framework */; };
@@ -69,6 +71,8 @@
 		4ED6F4BE21B4B408007046AF /* DonationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationsViewController.swift; sourceTree = "<group>"; };
 		4ED6F4C021B4B712007046AF /* DetailDonationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDonationController.swift; sourceTree = "<group>"; };
 		4ED6F4C221B4BB33007046AF /* AddDonationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDonationController.swift; sourceTree = "<group>"; };
+		4ED6F4C421B4D46A007046AF /* SearchDonationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDonationController.swift; sourceTree = "<group>"; };
+		4ED6F4C621B4D8F2007046AF /* SearchResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultController.swift; sourceTree = "<group>"; };
 		537D01AE80BF844DE979D34E /* Pods_2340Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_2340Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69B8C50AAB40F816A473D8A0 /* Pods_2340UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_2340UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6E42E9F52A0E1707BC49202 /* Pods-2340.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-2340.release.xcconfig"; path = "Pods/Target Support Files/Pods-2340/Pods-2340.release.xcconfig"; sourceTree = "<group>"; };
@@ -180,6 +184,8 @@
 				4ED6F4BE21B4B408007046AF /* DonationsViewController.swift */,
 				4ED6F4C021B4B712007046AF /* DetailDonationController.swift */,
 				4ED6F4C221B4BB33007046AF /* AddDonationController.swift */,
+				4ED6F4C421B4D46A007046AF /* SearchDonationController.swift */,
+				4ED6F4C621B4D8F2007046AF /* SearchResultController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -433,12 +439,14 @@
 				4E3D4C4C21B2FDC500E9D321 /* LocationViewController.swift in Sources */,
 				4E0F23F42195E24900D0C725 /* ViewController.swift in Sources */,
 				4ED6F4BF21B4B408007046AF /* DonationsViewController.swift in Sources */,
+				4ED6F4C521B4D46A007046AF /* SearchDonationController.swift in Sources */,
 				4E88397721AF9ACE00D21CA1 /* LoginController.swift in Sources */,
 				4ED6F4C321B4BB33007046AF /* AddDonationController.swift in Sources */,
 				4ED6F4C121B4B712007046AF /* DetailDonationController.swift in Sources */,
 				4E0F23F22195E24900D0C725 /* AppDelegate.swift in Sources */,
 				4E88397321AF8FF900D21CA1 /* RegisterController.swift in Sources */,
 				4ED6F4BD21B49045007046AF /* DetailLocationController.swift in Sources */,
+				4ED6F4C721B4D8F2007046AF /* SearchResultController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -144,6 +144,116 @@
             </objects>
             <point key="canvasLocation" x="-1356" y="437"/>
         </scene>
+        <!--Search Donation Controller-->
+        <scene sceneID="LLf-wN-d4S">
+            <objects>
+                <viewController id="ZHf-cp-K7J" customClass="SearchDonationController" customModule="_340" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dru-pE-pwb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TT5-IN-FIh">
+                                <rect key="frame" x="29" y="70" width="45" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DFT-wG-L6r">
+                                <rect key="frame" x="29" y="109" width="298" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKh-4k-xDO">
+                                <rect key="frame" x="29" y="161" width="126" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mXF-s6-SbE">
+                                <rect key="frame" x="29" y="437" width="126" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T3d-4k-dtY">
+                                <rect key="frame" x="29" y="202" width="320" height="216"/>
+                                <connections>
+                                    <outlet property="delegate" destination="ZHf-cp-K7J" id="lsb-Rg-6SU"/>
+                                </connections>
+                            </pickerView>
+                            <pickerView tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jZk-ZT-TXW">
+                                <rect key="frame" x="29" y="475" width="320" height="216"/>
+                                <connections>
+                                    <outlet property="delegate" destination="ZHf-cp-K7J" id="LXg-Zg-Mp3"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XGl-Q5-LOa" firstAttribute="trailing" secondItem="CKh-4k-xDO" secondAttribute="trailing" constant="220" id="6n9-3O-1Zs"/>
+                            <constraint firstItem="XGl-Q5-LOa" firstAttribute="trailing" secondItem="jZk-ZT-TXW" secondAttribute="trailing" constant="26" id="G5X-9a-mYi"/>
+                            <constraint firstItem="XGl-Q5-LOa" firstAttribute="trailing" secondItem="TT5-IN-FIh" secondAttribute="trailing" constant="301" id="GJj-Eh-Nwb"/>
+                            <constraint firstItem="T3d-4k-dtY" firstAttribute="leading" secondItem="XGl-Q5-LOa" secondAttribute="leading" constant="29" id="NCq-RP-Frb"/>
+                            <constraint firstItem="mXF-s6-SbE" firstAttribute="leading" secondItem="XGl-Q5-LOa" secondAttribute="leading" constant="29" id="Ngn-Y0-8RM"/>
+                            <constraint firstItem="jZk-ZT-TXW" firstAttribute="leading" secondItem="XGl-Q5-LOa" secondAttribute="leading" constant="29" id="OoE-RZ-fdb"/>
+                            <constraint firstItem="DFT-wG-L6r" firstAttribute="top" secondItem="TT5-IN-FIh" secondAttribute="bottom" constant="18" id="ZhA-cJ-Xja"/>
+                            <constraint firstItem="CKh-4k-xDO" firstAttribute="top" secondItem="DFT-wG-L6r" secondAttribute="bottom" constant="22" id="aB5-SS-98h"/>
+                            <constraint firstItem="TT5-IN-FIh" firstAttribute="leading" secondItem="XGl-Q5-LOa" secondAttribute="leading" constant="29" id="aC5-fQ-uxv"/>
+                            <constraint firstItem="TT5-IN-FIh" firstAttribute="top" secondItem="XGl-Q5-LOa" secondAttribute="top" constant="26" id="dI3-iG-Ufq"/>
+                            <constraint firstItem="DFT-wG-L6r" firstAttribute="leading" secondItem="XGl-Q5-LOa" secondAttribute="leading" constant="29" id="e24-fC-rkg"/>
+                            <constraint firstItem="XGl-Q5-LOa" firstAttribute="trailing" secondItem="T3d-4k-dtY" secondAttribute="trailing" constant="26" id="fvf-bc-hVT"/>
+                            <constraint firstItem="mXF-s6-SbE" firstAttribute="top" secondItem="T3d-4k-dtY" secondAttribute="bottom" constant="19" id="iXF-eT-0vD"/>
+                            <constraint firstItem="XGl-Q5-LOa" firstAttribute="trailing" secondItem="DFT-wG-L6r" secondAttribute="trailing" constant="48" id="j63-eo-7VL"/>
+                            <constraint firstItem="CKh-4k-xDO" firstAttribute="leading" secondItem="XGl-Q5-LOa" secondAttribute="leading" constant="29" id="mM7-iF-PnF"/>
+                            <constraint firstItem="jZk-ZT-TXW" firstAttribute="top" secondItem="mXF-s6-SbE" secondAttribute="bottom" constant="17" id="po1-HT-uPM"/>
+                            <constraint firstItem="XGl-Q5-LOa" firstAttribute="trailing" secondItem="mXF-s6-SbE" secondAttribute="trailing" constant="220" id="rMI-aw-6DC"/>
+                            <constraint firstItem="T3d-4k-dtY" firstAttribute="top" secondItem="CKh-4k-xDO" secondAttribute="bottom" constant="20" id="wPT-kE-EeP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XGl-Q5-LOa"/>
+                    </view>
+                    <connections>
+                        <outlet property="locationPicker" destination="jZk-ZT-TXW" id="axN-ZK-cyl"/>
+                        <outlet property="nameField" destination="DFT-wG-L6r" id="exo-SQ-dRz"/>
+                        <outlet property="typePicker" destination="T3d-4k-dtY" id="6iq-ae-3V1"/>
+                        <segue destination="CYc-s4-wOf" kind="show" identifier="searchDonation" id="Bte-Fq-Q48"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lan-9t-hG4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1092" y="-1012"/>
+        </scene>
+        <!--Search Result Controller-->
+        <scene sceneID="xa8-2l-Xck">
+            <objects>
+                <tableViewController id="CYc-s4-wOf" customClass="SearchResultController" customModule="_340" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="OWv-s5-Dkh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="result" id="h95-Xl-Jbc">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="h95-Xl-Jbc" id="dJt-uT-ZVr">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="CYc-s4-wOf" id="AEZ-L3-Pfu"/>
+                            <outlet property="delegate" destination="CYc-s4-wOf" id="GKH-td-bUJ"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="Kcl-on-aac" kind="show" identifier="searchDetailDonation" id="FZ1-6n-jj0"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b6b-N2-uEf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1958" y="-1012"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="WtL-tv-yI1">
             <objects>
@@ -164,6 +274,9 @@
                                 <rect key="frame" x="114.66666666666669" y="260" width="145" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Search Donation"/>
+                                <connections>
+                                    <segue destination="ZHf-cp-K7J" kind="show" id="XEn-Yk-vNJ"/>
+                                </connections>
                             </button>
                             <button verifyAmbiguity="off" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDG-60-rOk">
                                 <rect key="frame" x="163" y="331" width="49" height="36"/>
@@ -580,6 +693,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="FZ1-6n-jj0"/>
         <segue reference="f9A-UP-oXk"/>
         <segue reference="Asc-fM-OW3"/>
     </inferredMetricsTieBreakers>

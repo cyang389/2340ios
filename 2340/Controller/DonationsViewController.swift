@@ -58,6 +58,7 @@ class DonationsViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        index = indexPath.row
         performSegue(withIdentifier: "ViewDetailDonation", sender: self)
     }
     
