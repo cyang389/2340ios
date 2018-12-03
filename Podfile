@@ -9,6 +9,8 @@ target '2340' do
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
 
   target '2340Tests' do
     inherit! :search_paths
@@ -19,5 +21,4 @@ target '2340' do
     inherit! :search_paths
     # Pods for testing
   end
-
 end

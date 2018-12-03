@@ -15,6 +15,7 @@
 		4E0F24072195E24A00D0C725 /* _340Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0F24062195E24A00D0C725 /* _340Tests.swift */; };
 		4E0F24122195E24A00D0C725 /* _340UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0F24112195E24A00D0C725 /* _340UITests.swift */; };
 		4E3D4C4C21B2FDC500E9D321 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3D4C4B21B2FDC500E9D321 /* LocationViewController.swift */; };
+		4E6C45E521B58EBD0055127A /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6C45E421B58EBD0055127A /* MapController.swift */; };
 		4E88397321AF8FF900D21CA1 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E88397221AF8FF900D21CA1 /* RegisterController.swift */; };
 		4E88397521AF9A9500D21CA1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E88397421AF9A9500D21CA1 /* GoogleService-Info.plist */; };
 		4E88397721AF9ACE00D21CA1 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E88397621AF9ACE00D21CA1 /* LoginController.swift */; };
@@ -64,6 +65,7 @@
 		4E0F24112195E24A00D0C725 /* _340UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _340UITests.swift; sourceTree = "<group>"; };
 		4E0F24132195E24A00D0C725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E3D4C4B21B2FDC500E9D321 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		4E6C45E421B58EBD0055127A /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 		4E88397221AF8FF900D21CA1 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		4E88397421AF9A9500D21CA1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4E88397621AF9ACE00D21CA1 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				4ED6F4C221B4BB33007046AF /* AddDonationController.swift */,
 				4ED6F4C421B4D46A007046AF /* SearchDonationController.swift */,
 				4ED6F4C621B4D8F2007046AF /* SearchResultController.swift */,
+				4E6C45E421B58EBD0055127A /* MapController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				4E0F23EB2195E24800D0C725 /* Frameworks */,
 				4E0F23EC2195E24800D0C725 /* Resources */,
 				570AD63FBEC340C5ACDFAF9A /* [CP] Embed Pods Frameworks */,
+				4C8BDC8CC4A2EAF6D960F4B4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -335,6 +339,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4C8BDC8CC4A2EAF6D960F4B4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-2340/Pods-2340-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-2340/Pods-2340-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4F6F8BBD775A150A954B4D0C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -440,6 +468,7 @@
 				4E0F23F42195E24900D0C725 /* ViewController.swift in Sources */,
 				4ED6F4BF21B4B408007046AF /* DonationsViewController.swift in Sources */,
 				4ED6F4C521B4D46A007046AF /* SearchDonationController.swift in Sources */,
+				4E6C45E521B58EBD0055127A /* MapController.swift in Sources */,
 				4E88397721AF9ACE00D21CA1 /* LoginController.swift in Sources */,
 				4ED6F4C321B4BB33007046AF /* AddDonationController.swift in Sources */,
 				4ED6F4C121B4B712007046AF /* DetailDonationController.swift in Sources */,
